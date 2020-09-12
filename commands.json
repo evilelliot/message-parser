@@ -1,0 +1,72 @@
+{
+    "1":{
+        "name": "help",
+        "alias": [
+            "help", 
+            "h", 
+            "--h"
+        ],
+        "argumentSize": 3,
+        "function": "help",
+        "description": "Muestra la ayuda de los comandos",
+        "syntaxis": "lol [alias] [command name]",
+        "protected": false,
+        "acceptsFlags": true
+    },
+    "2":{
+        "name": "register",
+        "alias": [
+            "register", 
+            "r", 
+            "--r"
+        ],
+        "argumentSize": 4,
+        "function": "register",
+        "description": "Registra al usuario nuevo con un nickname y le devuelve un pin númerico de 6 cifras.",
+        "syntaxis": "lol [register|r|--r] [password] [nickname]",
+        "protected": true,
+        "acceptsFlags": false
+    },
+    "3":{
+        "name": "info",
+        "alias": [
+            "info", 
+            "i", 
+            "--i"
+        ],
+        "argumentSize": 4,
+        "function": "info",
+        "description": "Muestra la información sobre el usuario que la solicita.",
+        "syntaxis": "lol [info|i|--i] [password]",
+        "protected": true,
+        "acceptsFlags": false
+    },
+    "4":{
+        "name": "conf",
+        "alias": [
+            "configuration", 
+            "c", 
+            "--c"
+        ],
+        "argumentSize": 4,
+        "function": "info",
+        "description": "Configura la información sobre el usuario que la solicita.",
+        "syntaxis": "lol [configuration|c|--c] [password]",
+        "protected": true,
+        "acceptsFlags": false
+    },
+    "5":{
+        "name": "hi",
+        "alias": [
+            "hi", 
+            "h", 
+            "--h"
+        ],
+        "argumentSize": 3,
+        "function": "hi",
+        "description": "Configura la información sobre el usuario que la solicita.",
+        "syntaxis": "lol [hi|h|--h] [nombre]",
+        "protected": false,
+        "acceptsFlags": false
+    }
+}
